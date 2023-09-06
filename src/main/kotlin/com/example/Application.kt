@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
-    DatabaseFactory.init()
+    DatabaseFactory.init(environment.config)
     configureTemplating()
     configureRouting()
 }
